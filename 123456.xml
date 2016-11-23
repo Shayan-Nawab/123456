@@ -1,7 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="32" x="290" y="85">
     <next>
-      <block type="movement_stutter" id="92"></block>
+      <block type="movement_stutter" id="92">
+        <next>
+          <block type="robot_delay" id="101" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="116">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
